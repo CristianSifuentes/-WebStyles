@@ -1,0 +1,145 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fffcf2;
+  color: #000;
+}
+
+h1, h2, h3 {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #ff6600;
+  padding: 1rem;
+  border-bottom: 5px solid #000;
+}
+
+.header .logo {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.nav a {
+  color: #000;
+  background-color: #fffcf2;
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background-color: #00ccff;
+  color: #000;
+  border-bottom: 5px solid #000;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #000;
+  padding: 0.5rem 2rem;
+  border: 3px solid #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+  padding: 2rem 1rem;
+  background-color: #ffeeba;
+  border-bottom: 5px solid #000;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Blog Section */
+.blog {
+  padding: 2rem 1rem;
+}
+
+.blog-posts {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.post {
+  background-color: #fffcf2;
+  border: 3px solid #000;
+  padding: 1rem;
+}
+
+.post h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  font-weight: bold;
+  color: #ff6600;
+  text-transform: uppercase;
+}
+
+.read-more:hover {
+  color: #000;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ff6600;
+  color: #000;
+  border-top: 5px solid #000;
+}
