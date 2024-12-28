@@ -1,0 +1,138 @@
+/* Variables */
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --accent-color: #007bff;
+  --font-primary: 'Poppins', sans-serif;
+  --max-width: 800px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.nav .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .menu li {
+  margin-left: 1rem;
+}
+
+.nav .menu a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.nav .menu a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Blog Section */
+.posts {
+  padding: 3rem 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.post-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.post {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  margin-top: 0;
+  color: var(--accent-color);
+}
+
+.read-more {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #ffffff;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-top: 1px solid #ddd;
+  color: #666666;
+}

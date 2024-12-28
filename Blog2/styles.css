@@ -1,0 +1,130 @@
+/* Variables */
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333333;
+  --accent-color: #0073e6;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-secondary);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+  color: var(--accent-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-left: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+}
+
+/* Articles */
+.articles {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.article {
+  background: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.read-more {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #005bb5;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+  color: #888;
+}

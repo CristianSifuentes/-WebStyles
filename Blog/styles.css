@@ -1,0 +1,129 @@
+/* Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #ff6f61;
+  --font-primary: 'Merriweather', serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --max-width: 1200px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-secondary);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: #f5f5f5;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: var(--font-primary);
+  color: var(--text-color);
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #ff6f61, #ffc371);
+  color: #ffffff;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-family: var(--font-primary);
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+}
+
+/* Section */
+.section {
+  padding: 3rem 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-family: var(--font-primary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Articles */
+.articles {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.article {
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #ff4500;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f5f5f5;
+  color: #888;
+  border-top: 1px solid #ddd;
+}
